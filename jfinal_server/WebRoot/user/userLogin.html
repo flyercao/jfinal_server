@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper-details">
+			<div class="wrapper-cont">
+<div class="breadcrumbs" style="margin: 0 auto;">
+	<div class="page_right_title">
+		<h1>行业协会登录</h1>
+	</div>
+	<table>
+		<tbody><tr>
+			<td class="first">当前位置：</td>
+			<td>
+				<a href="/">首页</a>
+			</td>
+			<td>
+				<span>&gt;</span>
+			</td>
+			<td>
+				<a href="/register">行业协会登录</a>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<div class="store-conts fn-clear">
+	<div class="store-logintable" style="padding-top: 20px;">
+		<div class="main-title" style="padding: 0;">
+			<div class="store-logintitle main-tab">
+				<a id="consumer" href="/login">消费者登录</a>
+				<a id="merchant" href="/login/merchant">商家登录</a>
+				<a id="association" class="current">行业协会登录</a>
+			</div>
+		</div>
+		<div class="merchant store-table">
+			<form action="/login/association_login" id="form1" class="form1" method="post">
+				<table cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<th style="width: 20%;">帐 号：</th>
+						<td class="fn-clear" style="width: 80%;">
+							<input type="text" name="username" class="shortconts" datatype="*" maxlength="30" nullmsg="请填写帐号!" placeholder="手机号码/邮箱">
+							<span class="Validform_checktip"></span>
+						</td>
+					</tr>
+					<tr>
+						<th>密 码：</th>
+						<td>
+							<input type="password" name="password" datatype="*" maxlength="15" nullmsg="请填写密码!">
+							<span class="Validform_checktip"></span>
+						</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>
+							<input type="checkbox" checked="checked" name="remember" value="1">
+							<span class="remember">记住我的登录信息</span>
+							<span class="fontred">(请勿在公用电脑或者网吧内使用此项)</span>
+						</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>
+							<input type="submit" id="login" value="登  录" class="submit-btn">
+							<a href="/login/merchant_getpassword" class="lookpassword" title="找回密码">忘记密码？</a>
+						</td>
+					</tr>
+				</tbody></table>
+			</form>
+		</div>
+	</div>
+	<ul class="store-regimess store-regimess-login">
+		<li class="store-login">您还没有帐号？</li>
+		<li class="store-answer">行业协会怎么加入315消费网？</li>
+		<li class="store-member">请您与深圳市消费者委员会联系，商讨合作事宜。</li>
+	</ul>
+</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

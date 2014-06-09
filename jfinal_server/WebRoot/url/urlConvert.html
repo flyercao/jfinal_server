@@ -1,0 +1,27 @@
+<#include "/common/_layout.html" />
+<@layout>
+<h1>新浪微博管理 ---&gt; 短地址转换
+</h1>
+<div class="form_box">
+	<form action="/url/getShortUrl" method="post" >
+		<fieldset class="solid">
+	<legend>新浪微博短地址转换</legend>
+	<div>
+		<label>短地址</label>
+		<input type="text" maxlength="40"  name="shortUrl.shorturl" value="${(shortUrl.shorturl)!}" />
+	</div>
+	<div>
+		<label>长地址</label>
+		<input type="text" name="shortUrl.longurl" value="${(shortUrl.longurl)!}" />
+	</div>
+	<div> </div>
+	<div>
+		<label>&nbsp;</label>
+		<input value="转换" type="submit">${nameMsg!}
+	</div>
+</fieldset>
+	</form>
+</div>
+
+
+</@layout>
