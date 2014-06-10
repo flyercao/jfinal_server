@@ -8,6 +8,7 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="D:/Documents/GitHub/jfinal_server/WebRoot/WEB-INF/lib/apache/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="D:/Documents/GitHub/jfinal_server/WebRoot/WEB-INF/lib/apache/commons-codec-1.8.jar"/>
 	<classpathentry kind="lib" path="D:/Documents/GitHub/jfinal_server/WebRoot/WEB-INF/lib/apache/commons-codec-1.8-sources.jar"/>
@@ -19,5 +20,9 @@
 	<classpathentry kind="lib" path="D:/Documents/GitHub/jfinal_server/WebRoot/WEB-INF/lib/apache/httpcore-4.3.2.jar"/>
 	<classpathentry kind="lib" path="D:/Documents/GitHub/jfinal_server/WebRoot/WEB-INF/lib/apache/httpcore-ab-4.3.2.jar"/>
 	<classpathentry kind="lib" path="D:/Documents/GitHub/jfinal_server/WebRoot/WEB-INF/lib/apache/httpcore-nio-4.3.2.jar"/>
+=======
+	<classpathentry kind="lib" path="C:/Users/Administrator/Documents/GitHub/jfinal_server/WebRoot/WEB-INF/lib/fastjson-1.1.32.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/apache"/>
+>>>>>>> de192304b622e0e63569059609e8d8c30a78849d
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
