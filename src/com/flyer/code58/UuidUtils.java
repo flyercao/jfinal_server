@@ -1,8 +1,10 @@
 package com.flyer.code58;
 
-import org.apache.commons.codec.binary.Base64;
+//import org.apache.commons.codec.binary.Base64;
 import java.nio.ByteBuffer;
 import java.util.UUID;
+
+import org.apache.commons.codec.binary.Base64;
 
 public abstract class UuidUtils {
 
@@ -22,7 +24,7 @@ public abstract class UuidUtils {
         bb.putLong(uuid.getMostSignificantBits());
         bb.putLong(uuid.getLeastSignificantBits());
 
-        return Base64.encodeBase64URLSafeString(bb.array());
+        return Base64.encodeBase64(bb.array()).toString();
     }
 
     public static String encodeBase64Uuid(String uuidString) {
@@ -32,7 +34,7 @@ public abstract class UuidUtils {
 
     public static String decodeBase64Uuid(String compressedUuid) {
 
-        byte[] byUuid = Base64.decodeBase64(compressedUuid);
+        byte[] byUuid = Base64.decodeBase64(compressedUuid.getBytes());
 
         ByteBuffer bb = ByteBuffer.wrap(byUuid);
         UUID uuid = new UUID(bb.getLong(), bb.getLong());
