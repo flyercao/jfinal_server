@@ -2,11 +2,11 @@ package com.flyer.url;
 
 import org.apache.commons.lang.StringUtils;
 
-import com.demo.login.UserLoginInterceptor;
-import com.demo.login.UserLoginValidator;
 import com.jfinal.aop.Before;
 import com.jfinal.core.Controller;
 import com.jfinal.validate.Validator;
+import com.news.login.UserLoginInterceptor;
+import com.news.login.UserLoginValidator;
 
 /**
  * BlogValidator.
