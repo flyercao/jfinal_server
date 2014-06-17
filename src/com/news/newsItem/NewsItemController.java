@@ -8,6 +8,9 @@ public class NewsItemController extends Controller {
 	}
 	
 	public void getRecentNews(){
-		renderJson(NewsItem.dao.paginate(getParaToInt(0, 1), 10));
+		NewsItem newsItem=getModel(NewsItem.class);
+		int newsCategoryId=newsItem.getInt("newsCategoryId");
+		Long time=new Long(newsItem.getStr("publishTime"));
+		renderJson(NewsItem.dao.paginate(newsCategoryId,time,1, 10));
 		}
 }

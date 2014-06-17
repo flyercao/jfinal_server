@@ -17,5 +17,9 @@ public class NewsItem extends Model<NewsItem>  {
 	public Page<NewsItem> paginate(int pageNumber, int pageSize) {
 		return paginate(pageNumber, pageSize, "select *", "from newsItem order by id asc");
 	}
+	public Page<NewsItem> paginate(int newsCategoryId,long time ,int pageNumber, int pageSize) {
+		return paginate(pageNumber, pageSize, "select *", "from newsItem where  newsCategoryId = "+newsCategoryId+
+				"  and publishTime >= "+time+" order by id asc");
+	}
 	
 }
