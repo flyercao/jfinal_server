@@ -1,0 +1,68 @@
+﻿<#include "/common/_layout.html" />
+<@layout>
+<h1>发布新闻        ---&gt; 创建Blog
+</h1>
+<div class="form_box">
+	<form action="/news/publishNews" method="post" >
+		<fieldset class="solid">
+	<legend>发布一条新闻</legend>
+	<input type="hidden" name="newsItem.id" value="${(newsItem.id)!}" />
+	<div>
+		<label>频道ID</label>
+		<input type="text" maxlength="10"  name="newsItem.newsCategoryId" value="${(user.newsCategoryId)!}" />${nameMsg!}
+	</div>	<div>
+		<label>标题</label>
+		<input type="text" name="newsItem.title" value="${(newsItem.title)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>来源</label>
+		<input type="text" name="newsItem.source" value="${(newsItem.source)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>来源链接</label>
+		<input type="text" name="newsItem.source_url" value="${(newsItem.source_url)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>总结</label>
+		<input type="text" name="newsItem.summary" value="${(newsItem.summary)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>摘要</label>
+		<input type="text" name="newsItem.newsAbstract" value="${(newsItem.newsAbstract)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>精选评论</label>
+		<input type="text" name="newsItem.comment" value="${(newsItem.comment)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>评论数量</label>
+		<input type="text" name="newsItem.commentNum" value="${(newsItem.commentNum)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>图片一</label>
+		<input type="text" name="newsItem.picOne" value="${(newsItem.picOne)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>图片二</label>
+		<input type="text" name="newsItem.picTwo" value="${(newsItem.picTwo)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>图片三</label>
+		<input type="text" name="newsItem.picThr" value="${(newsItem.picThr)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>是否大图</label>
+		<input type="text" name="newsItem.isLarge" value="${(newsItem.isLarge)!}" />${passwordMsg!}
+	</div>
+	<div>
+		<label>&nbsp;</label>${loginResult!}
+	</div>
+	<div>
+		<label>&nbsp;</label>
+		<input value="发 布" type="submit"> 
+	</div>
+</fieldset>
+	</form>
+</div>
+
+</@layout>

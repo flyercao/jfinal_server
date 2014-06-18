@@ -11,6 +11,11 @@ public class NewsItem extends Model<NewsItem>  {
 		return get("id");
 	}
 	
+	public void publish(){
+		save();
+	}
+	
+	
 	/**
 	 * 所有 sql 写在 Model 或 Service 中，不要写在 Controller 中，养成好习惯，有利于大型项目的开发与维护
 	 */
@@ -19,7 +24,7 @@ public class NewsItem extends Model<NewsItem>  {
 	}
 	public Page<NewsItem> paginate(int newsCategoryId,long time ,int pageNumber, int pageSize) {
 		return paginate(pageNumber, pageSize, "select *", "from newsItem where  newsCategoryId = "+newsCategoryId+
-				"  and publishTime >= "+time+" order by id asc");
+				"  and publishTime > "+time+" order by id desc");
 	}
 	
 }
